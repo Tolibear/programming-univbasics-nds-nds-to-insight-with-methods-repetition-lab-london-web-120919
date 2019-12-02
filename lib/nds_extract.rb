@@ -45,11 +45,11 @@ def total_gross(source)
   # return the total
   gross_of_films = 0
     index = 0
-    nds = source
-    directors = list_of_directors(nds)
+    # nds = source
+    # directors = list_of_directors(nds)
 
-    while index < directors.count do
-      director_key = directors[index]
+    while index < source.count do
+      director_key = source.[index][:name]
       gross_of_films += directors_totals[director_key]
       index += 1
     end
