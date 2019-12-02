@@ -47,7 +47,7 @@ def total_gross(source)
     director_index = 0
     directors = list_of_directors
     while director_index < directors.count do
-      director_key = list_of_directors[director_index]
+      director_key = directors[director_index]
       gross_of_films += directors_totals[director_key]
       director_index += 1
     end
